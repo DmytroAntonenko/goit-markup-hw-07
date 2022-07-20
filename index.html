@@ -9,25 +9,26 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
 rel="stylesheet">
-    <link rel="stylesheet" href="./css/styless.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/1.1.0/normalize.min.css">
+    <link rel="stylesheet" href="./css/main.min.css">
 </head>
 <body>
     <header class="header">
-        <div class="container header-nav">
-            <a class="logo logo--header link" href="/"><span class="logo-accent">Web</span>Studio</a>
-        <nav class="site-nav">
-            <ul class="site-nav__list list">
-                <li class="site-nav__item">
-                    <a class="site-nav__link link current" href="#">Студия</a>
-                </li>
-                <li class="site-nav__item">
-                    <a class="site-nav__link link" href="./portfolio.html">Портфолио</a>
-                </li>
-                <li class="site-nav__item">
-                    <a class="site-nav__link link" href="#">Контакты</a>
-                </li>
-            </ul>
-        </nav>
+        <div class="container header-container">
+            <a class="logo logo-header link" href="/"><span class="logo-accent">Web</span>Studio</a>
+            <nav class="site-nav">
+                <ul class="site-nav__list list">
+                    <li class="site-nav__item">
+                        <a class="site-nav__link link current" href="#">Студия</a>
+                    </li>
+                    <li class="site-nav__item">
+                        <a class="site-nav__link link" href="./portfolio.html">Портфолио</a>
+                    </li>
+                    <li class="site-nav__item">
+                        <a class="site-nav__link link" href="#">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
         <ul class="contacts list">
             <li class="contacts__item">
                 <a class="contacts__link link"
@@ -100,7 +101,7 @@ rel="stylesheet">
                                 </svg>
                                 Соглашаюсь с рассылкой и принимаю <span class="form-request__ruls">Условия договора</span></label>
                          </div>
-                        <button class="button form__button" type="submit">Отправить</button>  
+                        <button class="button" type="submit">Отправить</button>  
                     </form>
                 </div>
             </div>         
@@ -421,10 +422,10 @@ rel="stylesheet">
                 </address> 
             </div>
             <div class="socials-footer">
-                <h3 class="socials__title">ПРИСОЕДИНЯЙТЕСЬ</h3>
+                <h3 class="socials-footer__title">ПРИСОЕДИНЯЙТЕСЬ</h3>
                 <ul class="socials-footer__list list">
                     <li class="socials__item">
-                        <a class="socials__link footer-socials__link link" href="#">
+                        <a class="socials__link socials-footer__link link" href="#">
                             <svg aria-label="link instagram" width="20" height="20">
                                 <use href="./images/icons.svg#icon-instagram"></use>
                             </svg>  
@@ -460,7 +461,7 @@ rel="stylesheet">
                     <label>
                         <input type="email" name="email" placeholder="E-mail" class="email" required  />
                     </label>
-                    <button class="button button__subscription" type="submit">
+                    <button class="button subscription__button" type="submit">
                         Подписаться
                         <svg class="subscription__icon" aria-label="link subscription" width="24" height="24">
                         <use href="./images/icons.svg#icon-send"></use>
