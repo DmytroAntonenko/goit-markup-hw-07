@@ -73,57 +73,59 @@
 
 .form-request {
     margin-bottom: 10px;
-}
 
-.form-field__icon {
-    position: relative;
-}
-.form-request__label {
-    display: block;
-    text-align: left;
-    margin-bottom: 4px;
 
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 1.15;
-}
-.form-request__input {
-    height: 40px;
-    width: 100%;
-    border: 1px solid rgba(33, 33, 33, 0.2);
-    border-radius: 4px;
-    cursor: pointer;
-    padding: 12px 8px 12px 42px;
+    &__tumb {
+        position: relative;
+    }
+    
+    &__label {
+        display: block;
+        text-align: left;
+        margin-bottom: 4px;
 
-    transition: border 250ms $transitionTimingFunction;
-}
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 1.15;
+    }
 
-.form-request__input:hover,
-.form-request__input:focus,
-.form-request__textarea:hover,
-.form-request__textarea:focus  {
-    border: 1px solid $accentColor;
-    outline: transparent;
-}
+    &__input {
+        height: 40px;
+        width: 100%;
+        border: 1px solid rgba(33, 33, 33, 0.2);
+        border-radius: 4px;
+        cursor: pointer;
+        padding: 12px 8px 12px 42px;
 
-.form-request__icon {
-    position: absolute;
-    top: 50%;
-    left: 12px;
-    transform: translateY(-50%);
+        transition: border 250ms $transitionTimingFunction;
+    }
+
+    &__input:hover,
+    &__input:focus,
+    &__textarea:hover,
+    &__textarea:focus  {
+        border: 1px solid $accentColor;
+        outline: transparent;
+    }
+
+    &__icon {
+        position: absolute;
+        top: 50%;
+        left: 12px;
+        transform: translateY(-50%);
    
-    transition-property: fill;
-    transition-duration: 250ms;
-    transition-timing-function: $transitionTimingFunction;
-}
+        transition-property: fill;
+        transition-duration: 250ms;
+        transition-timing-function: $transitionTimingFunction;
+    }
 
-.form-field__icon:hover .form-request__icon,
-.form-field__icon:focus-within .form-request__icon  {
-    fill: $accentColor;
-  }
+    &__tumb:hover &__icon,
+    &__tumb:focus-within &__icon  {
+        fill: $accentColor;
+    }
 
-.form-request__textarea {
+    &__textarea {
     font-weight: 400;
     font-size: 12px;
     line-height: 1.15;
@@ -140,13 +142,38 @@
     cursor: pointer;
 
     transition: border 250ms $transitionTimingFunction;
-  }
+    }
 
-.form-request__textarea::placeholder {
-    font-size: 12px;
-    line-height: 1.15;
-    letter-spacing: 0.01em;
-  }
+    &__textarea::placeholder {
+        font-size: 12px;
+        line-height: 1.15;
+        letter-spacing: 0.01em;
+    }
+
+    &__input-checkbox:checked + &__icon {
+    fill: $primeryBackgroundColor;
+    border: none;
+    }
+
+    &__input-checkbox {
+        appearance: none;
+        -webkit-appearance: none;
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        border: 0;
+        padding: 0;
+        clip: rect(0 0 0 0);
+        overflow: hidden;
+    }
+
+    &__ruls {
+        color: $accentColor;
+        text-decoration-line:underline;
+    }
+}
+
 
 .form-checkbox {
     position: relative;
@@ -158,32 +185,6 @@
     margin-right: auto;
     margin-bottom: 30px;    
 }
-
-.form-request__input-checkbox:checked + .form-request__icon {
-
-    fill: $primeryBackgroundColor;
-    border: none;
-    
-}
-
-.form-request__input-checkbox {
-    appearance: none;
-    -webkit-appearance: none;
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    clip: rect(0 0 0 0);
-    overflow: hidden;
-    
-}
-.form-request__ruls {
-    color: $accentColor;
-    text-decoration-line:underline;
-}
-
 .form-checkbox .form-request__label {
     display: inline;
     justify-content: row;
