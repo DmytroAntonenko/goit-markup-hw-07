@@ -25,12 +25,6 @@
         transition-timing-function: $transitionTimingFunction;
     }
 
-    &__link:hover,
-    &__link:focus {
-        color: $accentColor;
-        fill: $accentColor;
-    }
-
     &__icon {
         fill: $primaryTextColor;
         margin-right: 10px;

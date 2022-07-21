@@ -11,19 +11,9 @@
         letter-spacing: 0.03em;
         font-style: normal;
 
-        transition-property: color;
-        transition-duration: 250ms;
-        transition-timing-function: $transitionTimingFunction;
     }
 
     &-link--map {
         color: $primeryBodyColor;
-    }
-
-    &__link--map:hover,
-    &__link--map:focus, 
-    &__link:hover,
-    &__link:focus {
-        color: $accentColor;
     }
 }

@@ -49,14 +49,18 @@ body {
         text-decoration-line: none;
         color: inherit;
     
+        transition-property: color;
+        transition-duration: 250ms;
+        transition-timing-function: $transitionTimingFunction;
+    
     
         &:hover,
         &:focus {
             text-decoration-line: none;
+            color: $accentColor;
         }
     }
-
-
+    
     .list {
         margin: 0;
         padding-left: 0;

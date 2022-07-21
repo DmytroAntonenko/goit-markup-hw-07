@@ -5,8 +5,9 @@
         align-items: center;
     
     }
+    
     &__item {
-        width: calc((100% - 3*$cardSetGap)/4);
+        width: calc((100% - 3*#{$cardSetGap})/4);
     }
 
     &__item:not(:first-child) {
